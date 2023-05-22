@@ -11,12 +11,11 @@ public class Lazer extends Gastos {
     public void setImportante(boolean importante){
         this.importante = importante;
     }
-
-    @Override
+    
     public void mudarValor(double valor){
         super.mudarValor(valor * 1.05);
     }
-    @Override
+    
     public String apresentarTudo(){
         return super.apresentarTudo() + " // Importante: " + (getImportante() ? "sim" : "não");
     }
